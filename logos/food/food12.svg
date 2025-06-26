@@ -1,0 +1,16 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Donut base -->
+  <circle cx="300" cy="280" r="60" fill="#FBBF24"/>
+  <circle cx="300" cy="280" r="20" fill="#FFF"/>
+  <!-- Sprinkles -->
+  <rect x="285" y="250" width="4" height="12" fill="#EF4444"/>
+  <rect x="310" y="270" width="4" height="12" fill="#3B82F6"/>
+  <rect x="295" y="295" width="4" height="12" fill="#10B981"/>
+
+  <text id="companyNameText" x="300" y="420" font-size="42" fill="#78350F" text-anchor="middle" font-family="Comic Sans MS" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="460" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Comic Sans MS">
+    Sweeten Your Day
+  </text>
+</svg>

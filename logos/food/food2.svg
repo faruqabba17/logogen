@@ -1,0 +1,17 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cup -->
+  <rect x="260" y="220" width="80" height="140" rx="15" fill="#FCA5A5" stroke="#EF4444" stroke-width="4"/>
+  <!-- Straw -->
+  <rect x="295" y="180" width="10" height="40" fill="#EF4444"/>
+  <!-- Bubbles -->
+  <circle cx="280" cy="340" r="6" fill="#DC2626"/>
+  <circle cx="300" cy="345" r="6" fill="#DC2626"/>
+  <circle cx="320" cy="335" r="6" fill="#DC2626"/>
+
+  <text id="companyNameText" x="300" y="430" font-size="42" fill="#1F2937" text-anchor="middle" font-family="Arial" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="470" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Arial">
+    Chill, Sip, Repeat
+  </text>
+</svg>

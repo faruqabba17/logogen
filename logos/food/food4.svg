@@ -1,0 +1,13 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bowl -->
+  <path d="M220,300 Q300,400 380,300" fill="#BBF7D0" stroke="#16A34A" stroke-width="4"/>
+  <!-- Leaf -->
+  <path d="M300,260 Q290,240 310,220 Q330,240 320,260 Q310,270 300,260" fill="#22C55E"/>
+
+  <text id="companyNameText" x="300" y="430" font-size="42" fill="#14532D" text-anchor="middle" font-family="Verdana" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="470" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Verdana">
+    Freshness Served Daily
+  </text>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Glass -->
+  <path d="M280,220 Q300,270 320,220 Q310,300 290,300 Z" fill="#BE123C" stroke="#881337" stroke-width="3"/>
+  <!-- Stem -->
+  <rect x="295" y="300" width="10" height="60" fill="#881337"/>
+
+  <text id="companyNameText" x="300" y="420" font-size="42" fill="#1F2937" text-anchor="middle" font-family="Garamond" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="460" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Garamond">
+    Taste Elegance in Every Sip
+  </text>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hat -->
+  <path d="M240,270 Q270,220 300,250 Q330,220 360,270 Q340,310 260,310 Q240,290 240,270" fill="#FCD34D" stroke="#D97706" stroke-width="3"/>
+  <!-- Base -->
+  <rect x="260" y="310" width="80" height="20" fill="#D97706"/>
+
+  <text id="companyNameText" x="300" y="420" font-size="42" fill="#1F2937" text-anchor="middle" font-family="Arial" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="460" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Arial">
+    Where Taste Begins
+  </text>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wheels -->
+  <circle cx="240" cy="340" r="20" fill="#1E3A8A"/>
+  <circle cx="360" cy="340" r="20" fill="#1E3A8A"/>
+  <!-- Body -->
+  <rect x="250" y="300" width="100" height="20" fill="#3B82F6"/>
+  <rect x="270" y="260" width="30" height="40" fill="#60A5FA"/>
+  <rect x="310" y="260" width="40" height="20" fill="#1D4ED8"/>
+
+  <text id="companyNameText" x="300" y="430" font-size="42" fill="#1F2937" text-anchor="middle" font-family="Arial" font-weight="bold">
+   TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="470" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Arial">
+    Fast. Hot. Delivered.
+  </text>
+</svg>

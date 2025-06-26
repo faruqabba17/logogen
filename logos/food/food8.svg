@@ -1,0 +1,13 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cone -->
+  <polygon points="300,320 280,380 320,380" fill="#FBBF24"/>
+  <!-- Scoop -->
+  <circle cx="300" cy="300" r="30" fill="#F472B6" stroke="#BE185D" stroke-width="3"/>
+
+  <text id="companyNameText" x="300" y="430" font-size="42" fill="#831843" text-anchor="middle" font-family="Comic Sans MS" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="470" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Comic Sans MS">
+    Sweet Moments Served
+  </text>
+</svg>
