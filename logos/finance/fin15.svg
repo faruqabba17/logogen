@@ -1,0 +1,15 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Curve -->
+  <path d="M220,360 Q270,300 320,320 Q370,340 400,280" stroke="#4F46E5" stroke-width="5" fill="none"/>
+  <!-- Dots -->
+  <circle cx="220" cy="360" r="5" fill="#6366F1"/>
+  <circle cx="320" cy="320" r="5" fill="#6366F1"/>
+  <circle cx="400" cy="280" r="5" fill="#6366F1"/>
+
+  <text id="companyNameText" x="300" y="420" font-size="42" fill="#312E81" text-anchor="middle" font-family="Arial" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="460" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Arial">
+    Financial Forecasts that Work
+  </text>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Invoice -->
+  <rect x="250" y="250" width="100" height="130" rx="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="3"/>
+  <!-- Lines -->
+  <line x1="260" y1="270" x2="340" y2="270" stroke="#0284C7" stroke-width="2"/>
+  <line x1="260" y1="300" x2="340" y2="300" stroke="#0284C7" stroke-width="2"/>
+  <!-- Check -->
+  <polyline points="270,340 285,355 310,330" stroke="#22C55E" stroke-width="4" fill="none"/>
+
+  <text id="companyNameText" x="300" y="420" font-size="42" fill="#0F172A" text-anchor="middle" font-family="Helvetica" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="460" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Helvetica">
+    Streamlined Billing Made Easy
+  </text>
+</svg>

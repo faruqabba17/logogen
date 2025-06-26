@@ -1,0 +1,15 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card -->
+  <rect x="240" y="250" width="120" height="80" rx="10" fill="#3B82F6"/>
+  <rect x="260" y="270" width="40" height="10" fill="#60A5FA"/>
+  <!-- Lock -->
+  <rect x="310" y="310" width="30" height="20" fill="#1E3A8A"/>
+  <rect x="317" y="295" width="16" height="20" rx="4" fill="#1D4ED8"/>
+
+  <text id="companyNameText" x="300" y="430" font-size="42" fill="#1F2937" text-anchor="middle" font-family="Verdana" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="470" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Verdana">
+    Trusted Digital Transactions
+  </text>
+</svg>

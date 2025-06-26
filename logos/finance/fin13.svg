@@ -1,0 +1,17 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pig Body -->
+  <ellipse cx="300" cy="280" rx="60" ry="40" fill="#FBCFE8" stroke="#DB2777" stroke-width="3"/>
+  <!-- Ear -->
+  <polygon points="320,240 330,230 330,250" fill="#F472B6"/>
+  <!-- Tail -->
+  <path d="M360,280 q10,0 10,-10 q0,-10 -10,-10" stroke="#DB2777" stroke-width="3" fill="none"/>
+  <!-- Coin Slot -->
+  <rect x="290" y="250" width="20" height="4" fill="#1F2937"/>
+
+  <text id="companyNameText" x="300" y="420" font-size="42" fill="#831843" text-anchor="middle" font-family="Verdana" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="460" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Verdana">
+    Save More, Stress Less
+  </text>
+</svg>

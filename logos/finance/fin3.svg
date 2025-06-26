@@ -1,0 +1,14 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Book -->
+  <rect x="240" y="240" width="120" height="140" rx="8" fill="#E5E7EB" stroke="#374151" stroke-width="3"/>
+  <line x1="270" y1="240" x2="270" y2="380" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="300" y1="240" x2="300" y2="380" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="330" y1="240" x2="330" y2="380" stroke="#9CA3AF" stroke-width="2"/>
+
+  <text id="companyNameText" x="300" y="420" font-size="40" fill="#1F2937" text-anchor="middle" font-family="Georgia" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="460" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Georgia">
+    Precision in Every Line
+  </text>
+</svg>

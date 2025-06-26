@@ -1,0 +1,16 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Coin stacks -->
+  <ellipse cx="270" cy="320" rx="30" ry="10" fill="#FACC15"/>
+  <rect x="240" y="320" width="60" height="40" fill="#FBBF24"/>
+  <ellipse cx="270" cy="360" rx="30" ry="10" fill="#FACC15"/>
+  <ellipse cx="330" cy="330" rx="30" ry="10" fill="#FDE047"/>
+  <rect x="300" y="330" width="60" height="30" fill="#FCD34D"/>
+  <ellipse cx="330" cy="360" rx="30" ry="10" fill="#FDE047"/>
+
+  <text id="companyNameText" x="300" y="440" font-size="42" fill="#78350F" text-anchor="middle" font-family="Georgia" font-weight="bold">
+    TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="480" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Georgia">
+    Value. Secured. Delivered.
+  </text>
+</svg>

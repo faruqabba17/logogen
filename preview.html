@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preview Logo – Sarina Creatives</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 1rem;
+      text-align: center;
+      background: white;
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #4f46e5;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .controls {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #ffffff;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+
+    .controls input, .controls button {
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+    }
+
+    .controls button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .preview-container {
+      background: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 700px;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>Logo Preview – Sarina Creatives</header>
+
+<div class="controls">
+  <input type="color" id="bgColor" value="#ffffff" />
+  <input type="text" id="taglineInput" placeholder="Your Tagline" />
+  <button onclick="downloadAsJPG()">Download JPG</button>
+</div>
+
+<div class="preview-container" id="previewBox">Loading preview...</div>
+
+<footer>&copy; 2025 Sarina Creatives</footer>
+
+<script>
+  const getParam = key => new URLSearchParams(location.search).get(key);
+  const logo = getParam("logo") || "logos/academy/aca1.svg";
+  const name = getParam("name") || "YOUR BRAND";
+  const tagline = getParam("tagline") || "LOGO TEMPLATE";
+
+  const previewBox = document.getElementById("previewBox");
+  const taglineInput = document.getElementById("taglineInput");
+  const bgColor = document.getElementById("bgColor");
+
+  fetch(logo)
+    .then(res => res.text())
+    .then(svg => {
+      svg = svg.replace(/TECHNOLOGY/g, name).replace(/LOGO TEMPLATE/g, tagline);
+      previewBox.innerHTML = svg;
+      previewBox.style.backgroundColor = bgColor.value;
+      taglineInput.value = tagline;
+    })
+    .catch(() => {
+      previewBox.innerHTML = "<p style='color:red;'>❌ Could not load logo file. Check path.</p>";
+    });
+
+  taglineInput.addEventListener("input", () => {
+    const texts = previewBox.querySelectorAll("text");
+    if (texts.length >= 2) texts[1].textContent = taglineInput.value;
+  });
+
+  bgColor.addEventListener("input", () => {
+    previewBox.style.backgroundColor = bgColor.value;
+  });
+
+  function downloadAsJPG() {
+    const svg = previewBox.querySelector("svg");
+    if (!svg) return alert("SVG not loaded.");
+    const serializer = new XMLSerializer();
+    const svgStr = serializer.serializeToString(svg);
+    const canvas = document.createElement("canvas");
+    const [ , , width = 600, height = 600 ] = (svg.getAttribute("viewBox") || "0 0 600 600").split(" ");
+    canvas.width = width * 3;
+    canvas.height = height * 3;
+    const ctx = canvas.getContext("2d");
+
+    const img = new Image();
+    img.onload = () => {
+      ctx.fillStyle = bgColor.value;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      const jpeg = canvas.toDataURL("image/jpeg");
+      const link = document.createElement("a");
+      link.href = jpeg;
+      link.download = "logo.jpg";
+      link.click();
+    };
+    img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgStr)));
+  }
+</script>
+
+</body>
+</html>

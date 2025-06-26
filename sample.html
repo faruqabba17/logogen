@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select a Logo – Sarina Creatives</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4f46e5;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .logo-card {
+      background: white;
+      border-radius: 1rem;
+      padding: 1rem;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .logo-card:hover {
+      transform: scale(1.05);
+    }
+
+    .logo-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="greeting">Select a Logo</header>
+
+  <div class="logo-grid" id="logoGrid">
+    <!-- Logo cards will be inserted here by JS -->
+  </div>
+
+  <footer>&copy; 2025 Sarina Creatives</footer>
+
+  <script>
+    const logos = [
+      { path: 'logos/consultant/con1.svg', category: 'Consultant' },
+      { path: 'logos/consultant/con2.svg', category: 'Consultant' },
+      { path: 'logos/consultant/con3.svg', category: 'Consultant' },
+      { path: 'logos/consultant/con4.svg', category: 'Consultant' },
+      { path: 'logos/consultant/con5.svg', category: 'Consultant' },
+      { path: 'logos/consultant/con6.svg', category: 'Consultant' },
+      { path: 'logos/consultant/con7.svg', category: 'Consultant' },
+      { path: 'logos/consultant/con8.svg', category: 'Consultant' },
+      { path: 'logos/consultant/con9.svg', category: 'Consultant' },
+      { path: 'logos/consultant/con10.svg', category: 'Consultant' },
+      { path: 'logos/consultant/con11.svg', category: 'Consultant' },
+      { path: 'logos/technology/tech1.svg', category: 'Technology' },
+      { path: 'logos/technology/tech2.svg', category: 'Technology' },
+      { path: 'logos/technology/tech3.svg', category: 'Technology' },
+      { path: 'logos/technology/tech4.svg', category: 'Technology' },
+      { path: 'logos/technology/tech5.svg', category: 'Technology' },
+      { path: 'logos/technology/tech6.svg', category: 'Technology' },
+      { path: 'logos/technology/tech7.svg', category: 'Technology' },
+      { path: 'logos/technology/tech8.svg', category: 'Technology' },
+      { path: 'logos/technology/tech9.svg', category: 'Technology' },
+      { path: 'logos/technology/tech10.svg', category: 'Technology' },
+      { path: 'logos/technology/tech11.svg', category: 'Technology' },
+      { path: 'logos/technology/tech12.svg', category: 'Technology' },
+      { path: 'logos/technology/tech13.svg', category: 'Technology' },
+      { path: 'logos/technology/tech14.svg', category: 'Technology' },
+      { path: 'logos/technology/tech15.svg', category: 'Technology' },
+      { path: 'logos/technology/tech16.svg', category: 'Technology' },
+      { path: 'logos/technology/tech17.svg', category: 'Technology' },
+      { path: 'logos/technology/tech18.svg', category: 'Technology' },
+      { path: 'logos/technology/tech19.svg', category: 'Technology' },
+      { path: 'logos/technology/tech20.svg', category: 'Technology' },
+      { path: 'logos/academy/aca1.svg', category: 'Academy' },
+      { path: 'logos/academy/aca2.svg', category: 'Academy' },
+      { path: 'logos/academy/aca3.svg', category: 'Academy' },
+      { path: 'logos/academy/aca4.svg', category: 'Academy' },
+      { path: 'logos/academy/aca5.svg', category: 'Academy' },
+      { path: 'logos/academy/aca6.svg', category: 'Academy' },
+      { path: 'logos/academy/aca7.svg', category: 'Academy' },
+      { path: 'logos/academy/aca8.svg', category: 'Academy' },
+      { path: 'logos/academy/aca9.svg', category: 'Academy' },
+      { path: 'logos/academy/aca10.svg', category: 'Academy' },
+      { path: 'logos/academy/aca11.svg', category: 'Academy' },
+      { path: 'logos/academy/aca12.svg', category: 'Academy' },
+      { path: 'logos/academy/aca12.svg', category: 'Academy' },
+      { path: 'logos/academy/aca13.svg', category: 'Academy' },
+      { path: 'logos/academy/aca14.svg', category: 'Academy' },
+      { path: 'logos/academy/aca15.svg', category: 'Academy' }, 
+      { path: 'logos/media/media1.svg', category: 'Media' },
+      { path: 'logos/media/media2.svg', category: 'Media' },
+      { path: 'logos/media/media4.svg', category: 'Media' },
+      { path: 'logos/media/media3.svg', category: 'Media' },
+      { path: 'logos/media/media5.svg', category: 'Media' },
+      { path: 'logos/media/media6.svg', category: 'Media' },
+      { path: 'logos/media/media7.svg', category: 'Media' },
+      { path: 'logos/media/media8.svg', category: 'Media' },
+      { path: 'logos/media/media9.svg', category: 'Media' },
+      { path: 'logos/media/media10.svg', category: 'Media' },
+      { path: 'logos/media/media11.svg', category: 'Media' },
+      { path: 'logos/media/media12.svg', category: 'Media' },
+      { path: 'logos/media/media13.svg', category: 'Media' },
+      { path: 'logos/media/media14.svg', category: 'Media' },
+      { path: 'logos/estate/est1.svg', category: 'estate' },
+      { path: 'logos/estate/est2.svg', category: 'estate' },
+      { path: 'logos/estate/est3.svg', category: 'esatate' },
+      { path: 'logos/estate/est4.svg', category: 'estate' },
+      { path: 'logos/estate/est5.svg', category: 'estate' },
+      { path: 'logos/estate/est6.svg', category: 'estate' },
+      { path: 'logos/estate/est7.svg', category: 'estate' },
+      { path: 'logos/estate/est8.svg', category: 'estate' },
+      { path: 'logos/estate/est9.svg', category: 'estate' },
+      { path: 'logos/estate/est10.svg', category: 'estate' },
+      { path: 'logos/fashion/fash1.svg', category: 'fashion' },
+      { path: 'logos/fashion/fash2.svg', category: 'fashion' },
+      { path: 'logos/fashion/fash3.svg', category: 'fashion' },
+      { path: 'logos/fashion/fash4.svg', category: 'fashion' },
+      { path: 'logos/fashion/fash5.svg', category: 'fashion' },
+      { path: 'logos/fashion/fash6.svg', category: 'fashion' },
+      { path: 'logos/fashion/fash7.svg', category: 'fashion' },
+      { path: 'logos/fashion/fash8.svg', category: 'fashion' },
+      { path: 'logos/fashion/fash9.svg', category: 'fashion' },
+      { path: 'logos/fashion/fash10.svg', category: 'fashion' },
+      { path: 'logos/finance/fin1.svg', category: 'finance' },
+      { path: 'logos/finance/fin2.svg', category: 'finance' },
+      { path: 'logos/finance/fin3.svg', category: 'finance' },
+      { path: 'logos/finance/fin4.svg', category: 'finance' },
+      { path: 'logos/finance/fin5.svg', category: 'finance' },
+      { path: 'logos/finance/fin6.svg', category: 'finance' },
+      { path: 'logos/finance/fin7.svg', category: 'finance' },
+      { path: 'logos/finance/fin8.svg', category: 'finance' },
+      { path: 'logos/finance/fin9.svg', category: 'finance' },
+      { path: 'logos/finance/fin10.svg', category: 'finance' },
+      { path: 'logos/finance/fin1.svg', category: 'finance' },
+      { path: 'logos/food/food1.svg', category: 'food' },
+      { path: 'logos/food/food2.svg', category: 'food' },
+      { path: 'logos/food/food3.svg', category: 'food' },
+      { path: 'logos/food/food4.svg', category: 'food' },
+      { path: 'logos/food/food5.svg', category: 'food' },
+      { path: 'logos/food/food6.svg', category: 'food' },
+      { path: 'logos/food/food7.svg', category: 'food' },
+      { path: 'logos/food/food8.svg', category: 'food' },
+      { path: 'logos/food/food9.svg', category: 'food' },
+      { path: 'logos/food/food10.svg', category: 'food' },
+       { path: 'logos/health/health1.svg', category: 'health' },
+       { path: 'logos/health/health2.svg', category: 'health' },
+       { path: 'logos/health/health3.svg', category: 'health' },
+       { path: 'logos/health/health4.svg', category: 'health' },
+       { path: 'logos/health/health5.svg', category: 'health' },
+       { path: 'logos/health/health6.svg', category: 'health' },
+       { path: 'logos/health/health7.svg', category: 'health' },
+       { path: 'logos/health/health8.svg', category: 'health' },
+       { path: 'logos/health/health9.svg', category: 'health' },
+       { path: 'logos/health/health10.svg', category: 'health' },
+
+    ];
+
+    const queryParams = new URLSearchParams(window.location.search);
+    const name = queryParams.get("name") || "Your Brand";
+
+    document.getElementById("greeting").innerText = `Hi ${name}, choose a logo:`;
+
+    const grid = document.getElementById("logoGrid");
+
+    logos.forEach(logo => {
+      const card = document.createElement("div");
+      card.className = "logo-card";
+      card.innerHTML = `
+        <img src="${logo.path}" alt="${logo.category} Logo">
+        <p>${logo.category}</p>
+      `;
+      card.onclick = () => {
+        const encodedName = encodeURIComponent(name);
+        const tagline = encodeURIComponent("LOGO TEMPLATE");
+        window.location.href = `preview.html?logo=${logo.path}&name=${encodedName}&tagline=${tagline}`;
+      };
+      grid.appendChild(card);
+    });
+  </script>
+
+</body>
+</html>
