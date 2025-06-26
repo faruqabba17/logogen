@@ -1,0 +1,19 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Plate -->
+  <circle cx="300" cy="280" r="80" fill="#FDE68A" stroke="#F59E0B" stroke-width="6"/>
+  <!-- Fork -->
+  <rect x="230" y="220" width="8" height="80" fill="#D97706"/>
+  <rect x="230" y="220" width="2" height="20" fill="#FFF"/>
+  <rect x="234" y="220" width="2" height="20" fill="#FFF"/>
+  <rect x="238" y="220" width="2" height="20" fill="#FFF"/>
+  <!-- Spoon -->
+  <ellipse cx="370" cy="250" rx="10" ry="18" fill="#D97706"/>
+  <rect x="367" y="260" width="6" height="40" fill="#D97706"/>
+
+  <text id="companyNameText" x="300" y="420" font-size="42" fill="#1F2937" text-anchor="middle" font-family="Georgia" font-weight="bold">
+   TECHNOLOGY
+  </text>
+  <text id="taglineText" x="300" y="460" font-size="18" fill="#6B7280" text-anchor="middle" font-family="Georgia">
+    Bringing Flavor to Life
+  </text>
+</svg>
